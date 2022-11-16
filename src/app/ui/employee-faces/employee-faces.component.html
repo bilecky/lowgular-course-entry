@@ -1,0 +1,10 @@
+<div class="container">
+  <div *ngFor="let employee of data$ | async">
+    <img alt="face" [src]="employee.image">
+    <br>
+    {{employee.name}}
+  </div>
+</div>
+
+
+<ng-template #empty> There is no data</ng-template>
