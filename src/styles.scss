@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div {
+  margin: 15px;
+  text-align: center;
+}
+
+div img {
+  width: 200px;
+
+}
