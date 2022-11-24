@@ -5,8 +5,9 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {EmployeeListComponentModule} from "./ui/employee-list/employee-list.component-module";
 import {EmployeeFacesComponentModule} from "./ui/employee-faces/employee-faces.component-module";
-import {EmployeeService} from "./services/employee.service";
 import {EmployeeServiceModule} from "./services/employee.service-module";
+import {ProjectListComponentModule} from "./ui/project-list-component/project-list.component-module";
+import {ProjectServiceModule} from "./services/project.service-module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +18,8 @@ import {EmployeeServiceModule} from "./services/employee.service-module";
     EmployeeListComponentModule,
     EmployeeServiceModule,
     EmployeeFacesComponentModule,
+    ProjectListComponentModule,
+    ProjectServiceModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

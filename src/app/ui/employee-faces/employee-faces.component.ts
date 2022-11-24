@@ -3,10 +3,9 @@ import {
   Component,
   ViewEncapsulation,
 } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {EmployeeModel} from '../../model/employee.model';
 import {EmployeeService} from "../../services/employee.service";
+import {PersonModel} from "../../model/person.model";
 
 @Component({
   selector: 'app-employee-faces',
@@ -15,16 +14,10 @@ import {EmployeeService} from "../../services/employee.service";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EmployeeFacesComponent {
-  data$: Observable<EmployeeModel[] | null> = this._employeeService.getAll()
+  data$: Observable<PersonModel[] | null> = this._employeeService.getAll()
 
   constructor(private _employeeService: EmployeeService) {
   };
 }
 
-// export class EmployeeFacesComponent {
-//   constructor(private _httpClient: HttpClient) {}
-//
-//   data$: Observable<EmployeeModel[] | null> = this._httpClient.get<
-//     EmployeeModel[]
-//     >('assets/data/employees.json');
-// }
+
