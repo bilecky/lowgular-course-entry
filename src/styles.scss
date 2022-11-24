@@ -1,10 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+.app-body {
+  margin: 20vh auto;
+  border: 5px solid lightblue;
+  max-width: 870px;
+}
+
 .container {
   display: flex;
   justify-content: space-evenly;
+  margin: 0 auto;
+
 }
 
-div {
+.container div {
   margin: 15px;
   text-align: center;
 }
